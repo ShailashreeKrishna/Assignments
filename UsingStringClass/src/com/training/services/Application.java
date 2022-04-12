@@ -5,6 +5,9 @@ public class Application {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		StringService service=new StringService();
+		String city="Bangalore";
+		System.out.println(String.format("%S", city));
+		System.out.println(String.format("%1$.2f %2$.2f  %3$.2f",100.456,200.4567,300.5678));
        int key=14;
       switch (key) {
 	case 1:

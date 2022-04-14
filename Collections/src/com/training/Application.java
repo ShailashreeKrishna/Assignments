@@ -29,6 +29,10 @@ public class Application {
 		for(Book eachBook:bookList) {
 			System.out.println(eachBook);
 		}
+		System.out.println("Greater than");
+		List<Book> bookList1=((BookService)service).getBooksGrtThan(800);//this line is for java8
+		bookList1.forEach(System.out::println);
+		
 		
 		Book foundBook = service.findById(105);
 		

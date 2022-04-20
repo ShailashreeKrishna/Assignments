@@ -10,6 +10,7 @@ public class Application {
 		
 		System.out.println("Premium:"+object.calculatePremium());
 	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		VehicleInsurance car = new VehicleInsurance(1010,"ramesh","car",2019);

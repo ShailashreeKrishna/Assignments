@@ -23,6 +23,7 @@ public class MyApplication {
 		
 		System.out.println("enter balance");
 		double balance=sc.nextDouble();
+		
 		System.out.println("Account Type[savings,fixed,recurring]");
 		String accountType=sc.next();
 		System.out.println("Enter 0 to end 1 continue");

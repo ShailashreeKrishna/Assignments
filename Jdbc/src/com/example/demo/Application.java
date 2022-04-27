@@ -14,11 +14,11 @@ public class Application {
 		try {
 			
 			con=DriverManager.getConnection("Jdbc:oracle:thin:@10.90.1.105:1521/DEV","HR","HR");
-			//System.out.println(con);
+			System.out.println(con);
 			
 			ProductService service=new ProductService(con);
 			
-			Product toAdd=new Product(199,"Mobile",21000.00);
+			Product toAdd=new Product(209,"Mobile",21000.00);
 			int rowAdded=service.addProduct(toAdd);
 			
 			int rowsDeleted=service.deleteById(193);

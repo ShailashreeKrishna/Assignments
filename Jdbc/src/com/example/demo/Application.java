@@ -38,6 +38,8 @@ public class Application {
 			}else {
 				System.out.println("product is not found");
 			}
+			
+			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

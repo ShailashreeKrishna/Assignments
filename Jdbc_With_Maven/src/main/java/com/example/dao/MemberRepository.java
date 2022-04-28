@@ -1,4 +1,5 @@
 package com.example.dao;
+import com.example.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -55,11 +56,11 @@ public class MemberRepository implements CrudRepository<Member> {
 			ResultSet result=memstat.executeQuery();
 			
 			while(result.next()) {
+				
 				int memberID=result.getInt("MEMBER_ID");
 				 String memberName=result.getString("MEMBER_NAME");
 				 String memberAddress=result.getString("MEMBER_ADDRESS");
-				// LocalDate localdate=LocalDate.of(2022, 7, 15);
-				// Date date = (Date) Date.from(localdate.atStartOfDay().toInstant(null));
+				
 				Date accountOpenDate=result.getDate("ACC_OPEN_DATE");
 				 String memberShipType=result.getString("MEMBERSHIP_TYPE");
 				 double feesPaid=result.getDouble("FEES_PAID");

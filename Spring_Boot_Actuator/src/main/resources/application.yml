@@ -1,0 +1,33 @@
+server.port: 8010
+spring:
+   application:
+      name: actuator-example
+
+info:
+   app:
+      name: ${spring.application.name}
+      author: Java Shree
+   build:
+      artifactId: '@project.artifact@'
+      groupId: '@project.groupId@'
+      version: '@project.version@'
+   java:
+      version:@java.vesion@     
+management:
+   endpoints:
+      web:
+         exposure:
+            include:
+            - "*"
+
+   endpoint:
+      health:
+         show-details: always
+      shutdown:
+         enabled: true     
+         
+   info:
+      env:
+         enabled: true
+      java:
+         enabled: true      

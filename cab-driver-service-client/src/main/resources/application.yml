@@ -1,0 +1,15 @@
+spring:
+  application:                                      
+    name: cab-driver-service-client
+    
+server:
+  port: 8090
+    
+ 
+    
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka   

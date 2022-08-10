@@ -1,0 +1,11 @@
+server:
+  port: 5000
+  
+spring:  
+  datasource: 
+    url: jdbc:testdb.c7vygrthvz9c.ap-south-1.rds.amazonaws.com:5432/test
+    username: postgres
+    password: Bhuvi123
+  jpa:  
+    hibernate: 
+      ddl-auto: update

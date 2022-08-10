@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.example.ProductServiceTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.031 s <<< FAILURE! - in com.example.ProductServiceTest
+testFindDiscountListProduct  Time elapsed: 0.005 s  <<< ERROR!
+org.junit.platform.commons.PreconditionViolationException: Configuration error: You must configure at least one set of arguments for this @ParameterizedTest
+

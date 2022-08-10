@@ -8,7 +8,7 @@ public class Member {
 	private int memberID;
 	private String memberName;
 	private String memberAddress;
-	private Date accountOpenDate;
+	private LocalDate accountOpenDate;
 	private String memberShipType;
 	private double feesPaid;
 	private int maxBookAllowed;
@@ -17,7 +17,7 @@ public class Member {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Member(int memberID, String memberName, String memberAddress, Date accountOpenDate2,
+	public Member(int memberID, String memberName, String memberAddress, LocalDate accountOpenDate2,
 			String memberShipType, double feesPaid, int maxBookAllowed, double penaltyAmount) {
 		super();
 		this.memberID = memberID;
@@ -47,10 +47,10 @@ public class Member {
 	public void setMemberAddress(String memberAddress) {
 		this.memberAddress = memberAddress;
 	}
-	public Date getAccountOpenDate() {
+	public LocalDate getAccountOpenDate() {
 		return accountOpenDate;
 	}
-	public void setAccountOpenDate(Date accountOpenDate) {
+	public void setAccountOpenDate(LocalDate accountOpenDate) {
 		this.accountOpenDate = accountOpenDate;
 	}
 	public String getMemberShipType() {

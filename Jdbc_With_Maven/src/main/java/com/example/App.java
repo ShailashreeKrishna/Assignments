@@ -31,7 +31,7 @@ public class App
 		Connection con = null;
 try {
 			
-			con=DriverManager.getConnection("jdbc:oracle:thin:@10.90.1.105:1521/DEV","HR","HR");
+			con=DriverManager.getConnection("jdbc:oracle:thin:@10.90.1.107:1521/SIT","HR","HR");
 			
 			con=ConnectionFactory.getOracleConnection();
 			System.out.println(con);

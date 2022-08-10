@@ -61,7 +61,7 @@ public class MemberRepository implements CrudRepository<Member> {
 				 String memberName=result.getString("MEMBER_NAME");
 				 String memberAddress=result.getString("MEMBER_ADDRESS");
 				
-				Date accountOpenDate=result.getDate("ACC_OPEN_DATE");
+				LocalDate accountOpenDate=result.getDate("ACC_OPEN_DATE");
 				 String memberShipType=result.getString("MEMBERSHIP_TYPE");
 				 double feesPaid=result.getDouble("FEES_PAID");
 				 int maxBookAllowed=result.getInt("MAX_BOOK_ALLOWED");

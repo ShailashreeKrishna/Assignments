@@ -5,9 +5,10 @@ import com.example.demo.repos.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Repository;
+
 
 @SpringBootApplication
 
@@ -35,7 +36,7 @@ public class SpringJdbcApplication {
 //Product prod=context.getBean(Product.class);
 //System.out.println("row updated:"+repo.findById1(303));
 
-	
+	((ConfigurableApplicationContext) context).close();
 	}
 	
 //	@Bean
